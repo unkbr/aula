@@ -1,0 +1,32 @@
+<?php
+class math
+{
+    private $pi = 3.1415261;
+  function circle_area($radius)
+  {
+  return $this->pi * ($radius * $radius);
+  }
+  
+  
+  function list_circle_area($radius)
+  {
+    $areas = array();
+    foreach($radius as $r)
+    {
+    array_push($areas,circle_area($r);
+    }
+    return $areas;
+  }
+ 
+ 
+  function fibonacci($position)
+  {
+    if($position == 0)
+      return 0;
+    
+    if($position == 1)
+      return 1;
+    return fibonacci($position - 1) + fibonacci($position - 2);
+  }
+}
+?>
